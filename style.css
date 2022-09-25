@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    background-color: #E5E2D7;
+    font-family: 'Noto Serif JP', serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+/* 共通部分 */
+.wrapper {
+    max-width: 1024px;
+    width: 100vw;
+    margin: 0 auto;
+    padding-right: 15px;
+}
+.inner {
+    margin-top: 180px;
+}
+h2 {
+    font-size: 220%;
+    font-weight: normal;
+}
+/* ヘッダー */
+header {
+    background-image: url(img2/mainvisual-pc-sample.jpeg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    writing-mode: vertical-rl;
+    position: relative;
+}
+header ul li a {
+    color: white;
+}
+#store-btn {
+    color: white;
+    background-color: #333333;
+    border: 1px solid white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+#logo {
+    width: 40px;
+}
+h1 {
+    margin-right: 77px;
+    margin-top: 60px;
+    margin-left: 57px;
+}
+header ul li {
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+/* メイン */
+#news {
+    writing-mode: vertical-rl;
+    margin-left: auto;
+}
+#news ul li {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    line-height: 35px;
+    padding: 20px 20px;
+}
+#news ul li + li {
+    border-left: 1px solid black;
+    border-right: 0;
+}
+.en-title {
+    font-size: 80%;
+}
+.section-title {
+    letter-spacing: 5px;
+}
+#news ul {
+    margin-right: 100px;
+    margin-top: 70px;
+}
+span {
+    font-size: 80%;
+}
+#items {
+    margin-bottom: 150px;
+}
+.item-title {
+    display: flex;
+    align-items: center;
+}
+#title1 {
+    margin-left: 10px;
+}
+#title2 {
+    margin-right: 10px;
+}
+.item-title p {
+    margin-top: 20px;
+}
+#item1 {
+    writing-mode: vertical-rl;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+}
+.textbox {
+    color: white;
+    height: 30%;
+    width: 40%;
+}
+#text1 {
+    writing-mode: horizontal-tb;
+    background-color: rgba(255, 255, 0, 0.7);
+    position: absolute;
+    left: 0;
+    bottom: -3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item2 {
+    writing-mode: vertical-lr;
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+}
+#text2 {
+    writing-mode: horizontal-tb;
+    background-color: rgba(165, 42, 42, 0.75);
+    position: absolute;
+    right: 0;
+    bottom: -3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-text {
+    max-width: 640px;
+    width: 70%;
+    margin-top: 120px;
+    position: relative;
+}
+/* マップ */
+iframe {
+    width: 100%;
+    vertical-align: bottom;
+}
+/* フッター */
+footer {
+    background-color: black;
+}
+#footer-logo {
+    width: 40px;
+    margin-right: 80px;
+}
+#footer-contents {
+    writing-mode: vertical-rl;
+    width: 100%;
+    padding-top: 80px;
+    color: white;
+    position: relative;
+}
+#footer-contents div a {
+    color: white;
+}
+#shop-info {
+    margin-right: 70px;
+    font-size: 85%;
+}
+#shop-info p {
+    margin-right: 5px;
+}
+#footer-menu {
+    margin-right: 70px;
+}
+#footer-menu a {
+    display: block;
+    margin-right: 25px;
+}
+#footer-menu2 {
+    position: absolute;
+    left: 0;
+    padding-left: 30px;
+    font-size: 85%;
+}
+#store-link {
+    padding-bottom: 10px;
+}
+#contact {
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+#copyright {
+    color: white;
+    font-size: 40%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom:30px;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    header {
+        background-image: url(img2/mainvisual-sp\ \(1\).jpeg);
+    }
+    .sp-hidden {
+        display: none;
+    }
+    .en-title {
+        display: none;
+    }
+    #news-title {
+        display: block;
+    }
+    .section-title {
+        font-size: 150%;
+        padding-right: 10px;
+    }
+    .inner {
+        margin-top: 80px;
+    }
+    #news ul {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    #news ul li {
+        line-height: 15px;
+    }
+    .item-photo {
+        max-width: 80vw;
+        width: 100%;
+    }
+}
