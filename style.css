@@ -36,7 +36,7 @@ h2 {
 }
 /* ヘッダー */
 header {
-    background-image: url(img2/mainvisual-pc-sample.jpeg);
+    background-image: url(img2/mainvisual_sousaku.jpg);
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -224,9 +224,6 @@ footer {
 
 /* レスポンシブ */
 @media (max-width: 768px) {
-    header {
-        background-image: url(img2/mainvisual-sp\ \(1\).jpeg);
-    }
     .sp-hidden {
         display: none;
     }
