@@ -257,4 +257,19 @@ footer {
         max-width: 80vw;
         width: 100%;
     }
+    #footer-contents {
+        padding-top: 40px;
+    }
+    #footer-logo {
+        margin-right: 16px;
+    }
+    #shop-info {
+        margin-right: 32px;
+    }
+    #footer-menu {
+        margin-right: 32px;
+    }
+    #footer-menu a {
+        margin-right: 8px;
+    }
 }
